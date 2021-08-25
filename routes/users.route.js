@@ -89,4 +89,21 @@ router.post("/login", usersController.login);
  *              description: Bad request
  */
 
+router.get("/get-all-users", usersController.getAllUsers);
+/**
+ * @swagger
+ * /users/get-all-users:
+ *  get:
+ *      description: Used to get all users
+ *      tags:
+ *          - users
+ *      responses:
+ *          '200':
+ *              description: Resource added successfully
+ *          '500':
+ *              description: Internal server error
+ *          '400':
+ *              description: Bad request
+ */
+
 module.exports = router;
